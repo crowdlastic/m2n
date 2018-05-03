@@ -1,0 +1,98 @@
+m2n Services Crossmapping Considerations
+
+Version 0.1 2018050301 @v93r (gert@test.at) - First draft
+
+
+The aim of this document is to create a comprehensive, queryable  catalogue of features of external services which eventually could get crossmapped to m2n’s internal structure.
+The structure of this document on the other hand is most like subject to change in ongoing elaboration (points marked with “# elaborate”) and correction of errors in comprehension.
+TODO:
+	- convert to Markdown syntax
+	- add TOC
+	- elaborate & learn
+
+
+
+Audio Publishing Services
+
+
+
+API Constraints
+
+
+BandCamp
+
+	- API type: OAuth, HTTP Post
+	- Open API: no
+	- For label accounts only (cost unknown)
+	- Scraping (browser emulation) necessary
+	- Documentation: sparse
+	- Libraries: 3rd Party, NPM,Python, passive only 			# elaborate
+
+SoundCloud / MacAudio
+
+	- API type:
+		# elaborate, note: more than one type
+	- Open API: yes
+	- many platforms & wrappers supported
+		# elaborate
+	- Documentation: rich
+	- Libraries
+		# elaborate
+
+
+
+Structural Constraints
+
+
+Bandcamp Account Hierarchy
+
+	- label account
+		- pro account
+			- artists
+
+	- pro acount
+		- artist
+		- linked artists
+
+	- standard account
+		- artist
+		- linked artists
+
+
+SoundCloud / MacAudio Account Hierarchy:
+
+	- pro account
+		- artist
+
+	- standard account
+		- artist
+
+
+
+Design Constraints
+
+
+BandCamp
+
+	- header art:
+	- artist art:
+	- release art:
+	- releae addons filetypes:
+
+SoundCloud / MacAudio
+
+	- header art: 2480 x 520, 2MB max, PNG, JPG
+	- artist art:
+	- release art:
+	- releae addons filetypes:
+
+
+
+
+Social Media Services
+	# elaborate: FB, Twitter et al.
+ 
+
+
+Payment & Accounting Service
+	# elaborate: PayPal, Transferwise
